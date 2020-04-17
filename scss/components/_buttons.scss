@@ -1,0 +1,18 @@
+.btn-text{
+    &:link,
+    &:visited{
+        display: inline-block;
+        font-size: small;
+        text-decoration: none;  
+        border-bottom: 1px solid $color-tertiary;
+        padding: 3px;
+    }
+
+    &.hover{
+        box-shadow: 0 1rem rgba($color-black, $alpha: .15);
+    }
+
+    &.active{
+        box-shadow: 0 1rem rgba($color-black, $alpha: .15);
+    }
+}

@@ -1,0 +1,110 @@
+// Header Media Queries
+
+@media screen and (max-width: 640px){
+    // .header{
+    //     font: 12px "Open SanS";
+    //     margin: 0px 10px 0px;
+    //     padding: 50px 0px !important;
+    //     // display: none;
+    // }   
+}
+
+@media screen and (max-width: 640px ){
+    //  ul.nav__main--nav{
+    //     display: flex;
+    //     padding: 0;
+    // }
+}
+
+@media screen and (max-width: 1100px){
+    // ul.nav__main--nav{
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     padding: 0 100px !important;
+    // }
+    // &__main--nav a{
+    //     padding-top: .2em;
+    // }
+}
+
+// @media screen and (max-width: 550px){
+//     .header{
+
+//     }
+// }
+
+/*Navbar Media Queries*/
+
+@media screen and (max-width: 640px){
+    // .nav{
+    //     display: none;
+    //     // flex-direction: column;
+    // }
+    
+}
+
+// Mobile Navbar Hamburger Media queries
+
+@media screen and (max-width: 640px){
+    // .mobile__nav{ 
+    //     color: $color-universal;       
+    //     display: block !important;
+    // }
+    
+}
+
+// Home Media queries
+
+@media screen and (max-width: 640px){
+    // .home{ 
+    //     // width: 95vh;
+    //     flex-wrap: wrap;
+    //     padding: 20px !important;
+    //     // margin: 30px !important;
+
+    //     &__picture--image{
+    //         padding: 5px !important;
+    //     }
+
+    //     &__info{
+    //         // width: 100%;
+    //         padding: 5px !important
+    //     }
+    //     &__info p{
+    //         width: 100%;
+    //         font-size: 15px;
+    //         margin: 15px auto;
+        
+    //     }
+    // }
+}
+
+@media screen and (max-width: 400px){
+
+    // .home{
+    //     width: 100%;
+    // }
+    // &__info{
+    //     width: 100%;
+    //     padding: 5px;
+    // }
+}
+
+// Footer Media queries
+
+@media screen and (max-width: 550px){
+    // .footer{
+    //     flex-direction: column;
+    //     flex-wrap: wrap;
+    //     padding: 40px !important;
+
+    //     &__social media{
+    //         width: 80%;
+    //         padding: 0;
+    //     }
+
+    //     &__social-media li{
+    //         margin: 35px auto;
+    //     }
+    // }
+}

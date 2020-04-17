@@ -1,0 +1,45 @@
+/*General settings*/
+*,
+*::before,
+*::after
+{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: normal 16px sans-serif;
+    font-size: small;
+    font-family: "Quicksand", sans-serif;
+}
+body{
+    color: $color-black;
+}
+
+ul,
+nav{
+    list-style: none;
+}
+// li{
+//     // color: $color-primaryLinks;
+// }
+a{
+    text-decoration: none;   
+    opacity: 1;
+    color: $color-black;
+
+    &:hover{
+     opacity: 0.75;
+
+    }
+    &:link,
+    :visited{
+        color: $color-linksActiveVisit;
+    }
+    &:active{
+        color: linksActiveVisit;
+    }
+}
+
+

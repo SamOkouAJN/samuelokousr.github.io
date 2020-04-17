@@ -1,0 +1,274 @@
+/*General settings*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font: normal 16px sans-serif;
+  font-size: small;
+  font-family: "Quicksand", sans-serif; }
+
+body {
+  color: #000000; }
+
+ul,
+nav {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  opacity: 1;
+  color: #000000; }
+  a:hover {
+    opacity: 0.75; }
+  a:link,
+  a :visited {
+    color: #79a9b4; }
+  a:active {
+    color: linksActiveVisit; }
+
+p {
+  line-height: 1.6;
+  padding: 0.2em; }
+
+/*Navbar Media Queries*/
+.btn-text:link, .btn-text:visited {
+  display: inline-block;
+  font-size: small;
+  text-decoration: none;
+  border-bottom: 1px solid #0f6181;
+  padding: 3px; }
+
+.btn-text.hover {
+  box-shadow: 0 1rem rgba(0, 0, 0, 0.15); }
+
+.btn-text.active {
+  box-shadow: 0 1rem rgba(0, 0, 0, 0.15); }
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  ul.nav__main--nav {
+    display: flex;
+    flex-wrap: wrap; }
+  __main--nav a {
+    padding-top: .2em; }
+  .home {
+    display: flex;
+    padding: 0 150px !important; }
+    .home__picture--image {
+      width: 70%;
+      padding: 5px !important; }
+    .home__info {
+      padding: 5px !important; }
+    .home__info p {
+      width: 100%;
+      font-size: 12px;
+      margin: 10px auto; }
+  .footer__social media {
+    width: 80%;
+    padding: 0; }
+  .footer__social-media li {
+    margin: 35px auto; } }
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    font: 12px "Open SanS";
+    margin: 0px 10px 0px; }
+  .nav__main--nav {
+    flex-wrap: wrap;
+    padding: 0 50px !important; }
+  __main--nav a {
+    padding-top: .2em; }
+  .home {
+    width: 100%;
+    justify-content: center;
+    padding: 0 90px !important;
+    margin: 5px; }
+    .home__picture {
+      width: 40%;
+      padding: 5px; }
+    .home__info {
+      width: 60%;
+      padding: 5px !important; }
+    .home__info p {
+      font-size: 12px; } }
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .header {
+    font: 12px "Open SanS";
+    margin: 0px 10px 0px;
+    padding: 50px 0px !important; }
+  .nav__main--nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px !important; }
+    .nav__main--nav__main--nav a {
+      padding-top: .2em; }
+  .home {
+    flex-wrap: wrap;
+    padding: 10px !important;
+    margin: 5px !important; }
+    .home__picture--image {
+      padding: 5px !important; }
+    .home__info {
+      padding: 5px !important; }
+    .home__info p {
+      width: 100%;
+      font-size: 12px;
+      margin: 12px auto; } }
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .header {
+    font: 12px "Open SanS";
+    margin: 0px 10px 0px;
+    padding: 50px 0px !important; }
+  .nav {
+    display: none !important;
+    flex-direction: column; }
+    .nav__main--nav {
+      display: flex;
+      padding: 0; }
+  .mobile__nav {
+    color: #474747;
+    display: block !important; }
+  .home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px !important;
+    margin: 5px !important; }
+    .home__picture {
+      width: 100%;
+      padding: 148px !important; }
+    .home__info {
+      width: 100% !important;
+      padding: 5px !important; }
+    .home__info p {
+      width: 100% !important;
+      font-size: 14px;
+      margin: 12px auto; }
+  .footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 40px !important; }
+    .footer__social media {
+      width: 80%;
+      padding: 0; }
+    .footer__social-media li {
+      margin: 35px auto; } }
+
+/*Heading Settings*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 150px 50px 150px;
+  color: aliceblue; }
+  .header__search--icon {
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    align-self: flex-end; }
+
+.mobile__nav {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  display: none; }
+
+.nav__main--nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1em;
+  margin-bottom: 75px;
+  padding: 0 350px;
+  list-style: none; }
+  .nav__main--nav__ main--nav a {
+    margin: 0 15px;
+    font-size: small;
+    font-family: "Quicksand", sans-serif; }
+  .nav__main--nav__ ma:hover {
+    color: chartreuse; }
+
+h4 {
+  line-height: 2;
+  font-weight: 700;
+  padding: 0.1em;
+  margin: 0.2em; }
+
+hr {
+  color: #0f6181;
+  text-align: center;
+  overflow: visible;
+  width: 60%;
+  margin: 10px 10px; }
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0px 199px; }
+  .home__picture {
+    flex-basis: 40%;
+    background-image: url(/images/samuelokousr1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+  .home__info {
+    flex-basis: 60%;
+    text-align: justify; }
+  .home__info h4 {
+    border-bottom: 1px solid #eee;
+    padding: 5px 0; }
+  .home__picture--image {
+    max-width: 100%;
+    padding: 50px; }
+
+/*Footer settings*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 150px 199px 80px 300px; }
+  .footer__social-media {
+    display: flex;
+    list-style: none; }
+  .footer__social-media li {
+    margin: 0 5px; }
+  .footer__ social-media li:hover {
+    color: cadetblue; }
